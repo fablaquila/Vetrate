@@ -55,7 +55,10 @@ altri vetri già presenti. Ad esempio:
 Il vetro A viene posizionato per primo, poi B va sopra ad A allineato a sinistra
 e C a destra di B allineato sopra. Siccome non si può posizionare C adiacente a
 B perché coprirebbe A, si sposta a destra finché non si sovrappone a nessun
-altro vetro.
+altro vetro. Se un vetro non può essere posizionato, viene saltato e si prova
+con il successivo. Se si arriva alla fine della lista si riprovano in ordine
+quelli che non è stato possibile posizionare in precedenza, fermandosi quando
+nessun vetro può essere utilizzato.
 
 Calcolo della fitness
 -----

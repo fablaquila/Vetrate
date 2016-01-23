@@ -77,3 +77,4 @@ il risultato della decodifica (vedi sopra)
   intero di pixel (bisogna guardare i dati, ma credo che 0.5 cm dovrebbe
   andare). Il problema potrebbe essere che forse vengono fuori matrici
   abbastanza grandi...
+* Si può anche misurare come la somma dei pezzi *non* posizionati sulla matrice, cioè quelli non espressi nel fenotipo

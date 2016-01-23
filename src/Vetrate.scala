@@ -39,13 +39,15 @@ object Vetrate {
   def main( args: Array[String] ) {
 
     // leggi il CSV e metti tutti i pezzi in un array
-    var tiles = loadTiles("/home/piero/Desktop/progetti/Vetrate/src/vetri_fablab.csv")
+    val path = new java.io.File( "." ).getCanonicalPath
+    var tiles = loadTiles( path + "/vetri_fablab.csv")
 
     // verifica che ci sia tutto
     println( "Caricate " + tiles.length + " tessere." )
     for( t <- tiles ){
       println( s"\t ${t.width}, ${t.height}" )
     }
+
   }
 
 }
